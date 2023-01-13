@@ -84,31 +84,29 @@
 
 <body>
     <form action="/action_page.php" style="border:" 1px solid #ccc>
-        <div class="container"> 
+        <div class="container">
             <h1>Forma za prijavu</h1>
             <p>Molim unesite podatke u formu za kreiranje novog računa</p>
             <hr>
             <label for="email"><b>email</b></label>
-            <input id="email" placeholder="Unesite Email" name="email" required>
+            <input id="email" type="text" placeholder="Unesite Email" name="email" required>
 
             <label for="psw"><b>Lozinka</b></label>
-            <input id="password" placeholder="Unesite password" name="psw" required>
+            <input id="psw" type="password" placeholder="Unesite password" name="psw" required>
 
             <label for="psw-repeat"><b>Ponovite lozinku</b></label>
-            <input id="password" placeholder="Ponovite lozinku" name="psw-repeat" required>
+            <input id="password" type="password" placeholder="Ponovite lozinku" name="psw-repeat" required>
 
-            <label>
-                <input type="remember" checked name="remember"> style="margin-bottom:15px"> Zapamti me
+            <label for="remember">
+                <input id="remember" type="checkbox" style="margin-bottom:15px" name="remember" checked> Zapamti me
             </label>
-            <p>Prilikom kreiranja računa pristajete na naše <a href="#">
-                style="color:dodgerblue">uvjete korištenja</a></p>
+            <p>Prilikom kreiranja računa pristajete na naše <a href="#" style="color:dodgerblue">uvjete korištenja</a>
+            </p>
         </div>
 
         <div class="clearfix">
-<button class="cancelbtn" type="">Odustani</button>
-<button class="signupbtn" type="">Prijavi se</button>
-
-
+            <button class="cancelbtn" type="">Odustani</button>
+            <button class="signupbtn" type="">Prijavi se</button>
         </div>
 
     </form>
