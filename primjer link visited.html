@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link visited hover active</title>
+    <style>
+        a:link {
+            color: lightsalmon;
+            background-color: lawngreen;
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        a:visited {
+            color: magenta;
+            background-color: yellow;
+        }
+
+        a:hover {
+            text-decoration: green wavy underline;
+            background-color: yellow;
+        }
+
+        a:active {
+            background-color: red;
+            color: white;
+            text-decoration: none;
+        }
+
+        a.vrsta1:link {
+            color: black;
+        }
+
+        a.vrsta1:visited {
+            color: #0000CC;
+        }
+
+        a.vrsta1:hover {
+            text-decoration: green wavy underline;
+        }
+
+        a.vrsta1:active {
+            background-color: yellow;
+            color: black;
+        }
+
+        a.vrsta2 {
+            text-decoration: underline;
+        }
+
+        a.vrsta2:link {
+            color: #000000;
+        }
+
+        a.vrsta2:visited {
+            color: red;
+        }
+
+        a.vrsta2:hover {
+            text-decoration: underline dotted;
+            background-color: purple;
+            color: #ffffff;
+        }
+
+        a.vrsta2:active {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<h1>Radi na principu hijerarije LOVE HATE, prvo link zatim visited a onda hover i active</h1>
+
+<body>
+    <ul>
+        <li><a class="vrsta1" href="http://www.algebra.hr/">Algebra</a></li>
+        <br>
+        <li><a class="vrsta2" href="http://www.google.com/" target="_blank">Google</a></li>
+    </ul>
+</body>
+
+</html>
