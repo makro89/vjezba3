@@ -1,0 +1,96 @@
+/*body {
+    font-family: arial;
+    overflow-x: hidden;
+}
+
+body {
+    background: #ccc;
+
+}
+
+section {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 25rem;
+    background: white;
+    padding: 30px;
+    padding-bottom: 60px;
+}
+
+.full-width {
+    position: relative;
+    margin: 0 -30px;
+    padding: .25rem 30px;
+    background: black;
+    color: white;
+    font-size: 1.125rem;
+}
+*/
+.Header {
+    float: left;
+    width: 100%;
+    padding: 0.5em 0;
+}
+.Header h1 {
+    font-family: arial, sans-serif;
+    color: #6a4aed;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+}
+header {
+    display: block;
+}
+div.header-line {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 25rem;
+    background: white;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+.full-width-header {
+    position: relative;
+    margin: 0 -30px;
+    padding: .25rem 30px;
+    background: white;
+    color: white;
+    font-size: 1.125rem;
+}
+.full-width::before,
+.full-width::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 960px;
+    right: 100%;
+    background: red;
+}
+
+.full-width::after {
+    width: 960px;
+    left: 100%;
+    background: blue;
+}
+.content {
+    line-height: 28px;
+}
+.tabs-container label {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid greenyellow;
+    display: block;
+    font-size: 13px;
+    color: whitesmoke;
+    cursor: pointer;
+    user-select: none;
+}
+.tabs-container label:hover {
+    background: darkslateblue;
+}
+input [name="tab"] {
+    display: none;
+}
