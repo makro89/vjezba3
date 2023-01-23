@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div p {
+            text-decoration: underline;
+        }
+
+        .naznaka p {
+            color: red;
+        }
+
+        .naznaka .tekst {
+            background-color: yellow;
+            font-style: italic;
+        }
+
+        div>span {
+            color: red;
+            border-bottom: 2px solid blue;
+        }
+        p + p {
+            text-transform: uppercase;
+        }
+        div + p + span {
+            color: red;
+            text-transform: uppercase;
+        }
+        p ~ p {
+            border: 3px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Primjer 1</h1>
+    <div>
+        <p>
+            Paragraf unutar div-a paragraf je prvi potomak div elementa na njemu je primjenjena dekoracija podcrtanosti
+        </p>
+        <div class="naznaka">
+            <p>
+                Paragraf unutar div-a paragraf je prvi potomak div elementa na njemu je primjenjena dekoracija
+                podcrtanosti
+            </p>
+        </div>
+        <div class="naznaka">
+            <p class="tekst">Paragraf unutar div-a paragraf je prvi potomak div elementa na njemu je primjenjena
+                dekoracija podcrtanosti</p>
+        </div>
+    </div>
+    <br>
+    <h1>Primjer 2</h1>
+    <div>
+        <span>Prvi span unutar div elementa, span element je prvi direktan potomak div elementa i na njega su
+            primjenjena svojstva</span>
+    
+    <p>
+        <span>
+            Drugi span unutar paragraf elementa, nije direktan potomak od div elementa i na njega se ne primjenjuje
+            svojstvo css-a!!
+        </span>
+    </p>
+    <span>
+        Drugi span unutar div elementa, ovaj span element je također direktan potomak div elementa i na njega su
+        primjenjena svojstva
+    </span>
+</div>
+<br>
+<h1>Primjer 3</h1>
+<p>prvi općeniti paragraf na kojem nema nikakve primjene stila</p>
+<p>drugi paragraf koji je neposredan susjed prethodnog paragrafa i na njemu primjenjujemo svojstvo tekstualne transformacije velikih slova</p>
+<div>
+    <p>ovo je paragraf unutar div elementa i na njega ne želimo primjeniti nikakva svojstva</p>
+</div>
+<div>ovoje drugi primjer u kojem je ovaj tekst unutar div elementa</div>
+<p>ovo tekst je paragraf u istoj strukturi kao i div elemetn</p>
+<span>ovaj tekst je span eleement u istoj strukturi kao i prethodni div i paragraf element te je na njega primjenjeno svojstvo neposrednog susjeda</span>
+<br>
+<h1>Primjer 4</h1>
+
+<p>Prvi paragraf unutar strukture html-a</p>
+<ul>
+    <li>prvi</li>
+    <li>drugi</li>
+    <li>treći</li>
+    <li>četvrti</li>
+</ul>
+<p>drugi paragraf unutar strukture html-a na istoj razini kai i prvi paragraf. na ovom paragrafu želimo primjeniti neko svojstvo stilova</p>
+<p>treći paragraf</p>
+</body>
+
+</html>
