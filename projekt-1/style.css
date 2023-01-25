@@ -59,8 +59,8 @@ div.header-line {
     color: white;
     font-size: 1.125rem;
 }
-.full-width::before,
-.full-width::after {
+.full-width-header::before,
+.full-width-header::after {
     content: "";
     position: absolute;
     top: 0;
@@ -70,7 +70,7 @@ div.header-line {
     background: red;
 }
 
-.full-width::after {
+.full-width-header::after {
     width: 960px;
     left: 100%;
     background: blue;
@@ -93,4 +93,48 @@ div.header-line {
 }
 input [name="tab"] {
     display: none;
+}
+.tabs-container {
+    position: relative;
+    background: #2652cc;
+    width: 120px;
+    height: 100vh;
+    float: left;
+    z-index: 20;
+}
+input [
+    name="tab"
+]
+    {
+        display: none;
+    }
+
+.tab-content {
+    position: relative;
+    background: #eee;
+    width: calc(100% - 120px);
+    min-height: 100vh;
+    padding: 15px;
+    float: left;
+    box-sizing: border-box;
+    z-index: 19;
+    display: none;
+}
+.tab-content::after {
+    content: "";
+    clear: both;
+}
+input [name="tab"]:checked + .tab-content {
+    display: block;
+    animation: slide 0.5s forwards;
+}
+@keyframes slide {
+    from{
+        left: -100%;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        opacity: 1;
+    }
 }
