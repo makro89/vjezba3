@@ -1,0 +1,130 @@
+/*div {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 20px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 100px;
+    left: 175px;
+}
+#div-1 {
+    background-color: black;
+}
+#div-2 {
+    transform: scale(3, 1.5);
+    background-color: tomato;
+    opacity: 0.8;
+}
+div {
+    line-height: 150px;
+}
+#container {
+    top: 150px;
+    left: 25px;
+    position: absolute;
+}
+.group {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+}
+.original, .transformed {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+}
+.transformed {
+    background-color: tomato;
+    opacity: 0.8;
+}
+#transformed-1 {
+    transform: rotate(45deg);
+}
+#transformed-2 {
+    transform: rotate(1.2rad);
+}
+#transformed-3 {
+    transform: rotate(0.25turn);
+}
+#div-4 {
+    background-color: black;
+}
+#div-5 {
+    transform: translate(100px, 20px) scale(0.8) rotate(30deg);
+    background-color: tomato;
+    opacity: 0.8;
+}
+#div-4, #div-5 {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 20px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 500px;
+    left: 175px;
+}
+#transformed-4 {
+    transform: perspective(500px) rotateY(40deg);
+}
+#transformed-5 {
+    transform: perspective(500px) rotateY(60deg);
+}
+#transformed-6 {
+    transform: perspective(500px) rotateY(80deg);
+}
+#container {
+    top: 100px;
+    left: 125px;
+    position: absolute;
+}
+#transformed-7 {
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+#transformed-8 {
+    transform: rotate(45deg);
+    transform-origin: bottom left;
+}
+div {
+    line-height: 150px;
+}*/
+div {
+    transition: transform 2s;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 20px;
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    text-align: center;
+    top: 25px;
+    left: 25px;
+    animation: pulsiraj 1s infinite;
+    animation-direction: alternate;
+}
+div:hover {
+    transform: scale(2) rotate(720deg);
+    cursor: pointer;
+}
+div:hover {
+    transform: rotate(720deg);
+}
+@keyframes pulsiraj {
+    0% {
+        transform: scale(0.75);
+    
+    }
+    100% {
+        transform: scale(1.5);
+    } 
+    
+}

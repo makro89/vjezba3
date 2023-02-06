@@ -1,0 +1,38 @@
+body {
+    font-family: arial;
+    margin: 15px;
+    text-align: center;
+}
+.wrap {
+    display: inline-block;
+    margin: 0 40px 2em 0;
+    background: lightgray;
+}
+div {
+    width: 170px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+}
+div:hover {
+    cursor: pointer;
+}
+.one, .four, .seven, .ten {
+    background: tomato;
+}
+.one:hover {
+    transform: translateX(20px);
+}
+.two:hover {
+    transform: translateY(-20px);
+}
+.two, .five, .eight, .eleven {
+    background: skyblue;
+}
+.three, .six, .nine {
+    background: gold;
+}
+.three:hover {
+    transform: translate(-20px, 20px);
+}
